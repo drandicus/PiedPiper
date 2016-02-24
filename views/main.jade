@@ -1,0 +1,31 @@
+extends layout
+
+block content
+	.header
+		img(src='images/logo.png').logo
+		.header-button#record
+			div Record
+		.header-button#summarize
+			div Summarize
+		.header-button#session
+			div Session
+	.sidebar
+		.sidebar-content
+			h1 Template
+
+			div.add-template Add Template
+
+			h3 Sample Templates
+			div.sample-template Medical Template
+	.main-content
+		input(type='text').keyboard#keyboard
+		.transcript
+			div#text.text-box
+				div.caption Transcript
+
+		.summary
+			div#summary.text-box
+				div.caption#summary-caption Summary
+
+	script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+	script(src='javascripts/main.js')
